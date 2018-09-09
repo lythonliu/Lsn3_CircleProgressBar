@@ -1,10 +1,16 @@
 package com.dongnao.lsn3_circleprogressbar;
 
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends com.lythonliu.LinkAppCompatActivity {
+
+    @Override
+    public String getAppName(){
+        return BuildConfig.APP_NAME;
+    }
 
     private CircleProgressBar mProgressbar;
 
